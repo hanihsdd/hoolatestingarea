@@ -1,0 +1,717 @@
+
+
+
+
+/** Make Footer Text Inline at 960px rather than 600px **/
+
+@media (max-width:960px) {footer .hide-mobile {
+  display: none!important
+}
+footer .hide-desktop {
+  display: block!important
+}
+footer .inline-mobile {
+  display: inline!important;
+  margin: 0!important
+}
+
+}
+
+
+/** Newsletter Form max-width **/
+
+
+@media (min-width: 716px ) and (max-width: 960px){
+  footer .simple-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+
+
+/** Mobile Top Nav Hover White **/
+
+.sub-menu li a:hover {
+  color: #231f20;
+}
+
+.pure-menu.sub-menu .pure-menu-selected a {
+  color: #fff;
+}
+
+.tools .search-form button:hover {
+  background: 0 0;
+  color: #ffac00;
+}
+
+
+
+/*********************PAGE BANNER*********************/
+
+
+.page-banner {
+  text-align: center;
+  background: #ffac00;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-size: 0.625em; /* 10px / 16px */
+  font-weight: 700;
+  letter-spacing: .15em;
+  color: #231f20;
+  border-top: 5px solid #ffac00;
+}
+
+
+/*********************HEADER*********************/
+
+/** Orange Border Top **/
+
+/** Add border on top of page **/
+header {
+  border-top: 5px solid #ffac00; 
+}
+
+
+/** Remove border on top of page for mobile **/
+@media (max-width: 715px) {
+
+  header {
+    border-top: none;
+  }
+  
+  .page-banner {
+    border-bottom: 1px solid #faa21e;
+  }
+  
+}
+
+/** Decreasing Size of Header Area**/
+
+@media (min-width:716px) {
+  
+  /** decrease padding on top/bottom of header group **/
+  .header-group {
+    padding: 5px 0 20px;
+  }
+
+
+  /** decrease top margin from logo - was 20px **/
+  header .logo img {
+    margin: 10px 0;
+  }
+
+}
+
+
+/** decrease font-weight and increase letter-spacing of subheading under logo **/
+header .logo h2 {
+  font-family:"le-monde-livre-std",TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif;
+  font-size: 12px; /* 12px / 16px */
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  padding-bottom: 10px;
+  width: 100%;
+  color: #231f20;
+  text-align: center;
+  text-transform: none;
+}
+
+
+/** border before main menu - increase border width 
+to 60% to match footer border **/
+header .top-menu:before {
+  border-top: 1px solid #f1f1f1;
+  width: 60%;
+}
+
+
+.search-btn {
+  display: none;
+}
+#search-field::-webkit-input-placeholder { color: #231f20;text-transform:uppercase;line-height:1.55;font-family:brandon-grotesque,sans-serif; font-weight: 500;}
+:-moz-placeholder,
+::-moz-placeholder { color: #231f20;text-transform:uppercase;line-height:1.55;font-family:brandon-grotesque,sans-serif }
+:-ms-input-placeholder { color: #231f20;text-transform:uppercase;line-height:1.55;font-family:brandon-grotesque,sans-serif }
+
+/*********************MENU & LINKS*********************/
+
+/** Hover, Active, and Selected link = Orange / Inactive = Black **/
+
+.pure-menu a:hover {
+  color: #ffac00;
+  color: #231f20;
+  font-weight: 900;
+}
+a {
+  color: #231f20;
+}
+a:hover {
+  color: #231f20;
+  font-weight: 900;
+}
+
+
+@media (min-width:716px) {.pure-menu ul:hover a,.pure-menu.has-active ul:hover a {
+  color: #231f20!important;
+}
+.pure-menu ul:hover a:hover,.pure-menu.has-active ul:hover a:hover {
+  color: #231f20!important;
+  font-weight: 900;
+}
+.pure-menu .pure-menu-selected a,.pure-menu a:hover,.top-menu .pure-menu .pure-menu-selected a,.top-menu .pure-menu a:hover,.top-menu .pure-menu.has-active .pure-menu-selected a,.top-menu .pure-menu.has-active a:hover,a.active {
+  color: #231f20;
+  font-weight: 900;
+}
+.top-menu .pure-menu.has-active a {
+  color: #231f20;
+}
+
+#collections-menu .pure-menu .pure-menu-selected a {
+  color: #231f20;
+  font-weight: 900;
+}
+
+}
+
+
+
+/*********************BUTTON STYLING*********************/
+
+
+button.submit, .pure-button.primary , .pure-button.secondary{
+  border-radius: 0;
+  color: #fff;
+  background: #ffac00;
+  border: 1px solid #ffac00;
+  -webkit-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  transition: all .35s ease
+}
+
+button.submit:hover, .primary:hover, .pure-button.primary:hover, .pure-button.secondary:hover {
+  border-radius: 0;
+  color: #fff;
+  background: #ffc54c;
+  border:  1px solid #ffc54c;
+  -webkit-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
+/** Mobile Search Button Styling **/
+
+header .pure-button.secondary {
+  background-color: #ffac00;
+  font-family: 'brandon-grotesque', sans-serif;
+  margin-bottom: 12px;
+}
+
+
+header .pure-button.secondary:hover {
+  background-color: #ffc54c;
+  border: none;
+}
+
+
+/** Close Button Styling **/
+
+.close {
+  color: #ffac00;
+}
+
+.close:hover {
+  background-color: #fff!important;
+  color: #ffc54c!important;
+}
+
+
+/** Close Button Lookbook - Increase Size **/
+
+
+.popup-item .close {
+  font-size: 60px;
+}
+
+
+
+/** Content Pages **/
+
+
+li.page-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.page .side-bar a {
+  font-weight: 400;
+  color: #231f20;
+}
+
+.page .side-bar a:hover {
+  color: #ffac00;
+}
+
+.page nav a {
+  padding-top: 10px;
+}
+
+.page .page-content {
+  border-left: 1px solid #f1f2f2;
+  max-width: 600px;
+}
+
+.page .account-page {
+  max-width: 100%;
+}
+
+
+.account-page, .blog-post article {
+  border-left: 1px solid #f1f2f2;
+}
+
+.page .page-content article h1, .page .page-content article h2 {
+  
+}
+
+.page .page-content article.colapsable-basic h1.colapse-item {
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.page h2 {
+}
+
+.page .account-page {
+}
+
+.account-page p, .account-page .pure-form label {
+  letter-spacing: 0.15em;
+}
+
+
+
+
+@media (max-width:767px) {
+  .page .page-content, .account-page, .blog-post article {
+    border-left: none;
+    max-width: 999px;
+  }
+
+  li.page-title  {
+    font-weight: 700;
+    border-bottom: 1px solid #f1f2f2;
+    border-top: 1px solid #f1f2f2;
+    padding: 19px 0;
+  }
+  
+  .page .side-bar ul a {
+    padding: 19px 0;
+  }
+  
+  .page .side-bar ul {
+    text-align: center;
+  }
+  
+  .page {
+    padding-top: 0;
+  }
+}
+
+  
+  
+/** About Page **/
+
+.about-page h1.hide-desktop {
+  text-align: center;
+  border-top: 1px solid #f1f2f2;
+  border-bottom: 1px solid #f1f2f2;
+  padding: 19px 0;
+}
+
+
+
+
+.about-content {
+  padding: 80px 0;
+  max-width: 600px;
+  line-height: 1.5;
+  }
+
+
+@media (max-width: 715px) {
+  .about-content {
+    padding: 40px 20px;
+  }
+}
+  
+  /** Assorted Changes **/
+  
+  .buy-tool p {
+    letter-spacing: 0.15em;
+  }
+  
+  
+  .blog .item time {
+    display: none;
+  }
+  
+  span.lower {
+    text-transform: lowercase;
+  }
+  
+
+  
+  
+  @media (max-width: 960px) {
+  footer .mobile-toggle {
+
+   font-weight: 700;
+   letter-spacing: 0.15em;
+
+  }
+}
+
+  @media (min-width:961px) and (max-width: 1020px) {
+    footer h2, footer label{
+      letter-spacing: 0.1em;
+    }
+  }
+  
+  
+  /* Cart */
+  
+  .full-page .cart h2 {
+    font-weight: 400;
+  }
+  
+  .full-page .cart .pure-button {
+    font-size: 12px;
+    background: #ffac00;
+    color: #fff;
+    border: none;
+    
+  }
+  
+  .full-page .cart .pure-button:hover {
+    background: #ffc54c;
+  }
+  
+  .cart p.small {
+    letter-spacing: 0.15em;
+  }
+  
+  .cart span.small-print {
+    letter-spacing: 0.15em;
+  }
+  
+ .cart h2 a {
+   font-weight: 700;
+ }
+
+@media (max-width: 716px) {
+  .cart {
+    padding-top: 0;
+  }
+}
+
+/* Sign In Pages */
+
+p.note {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+}
+
+.pure-form.standard h1 {
+
+}
+
+
+
+/* Tables */
+
+
+
+.page article td {
+  font-style: normal;
+  letter-spacing:0.07em;
+}
+
+
+#cookies_table tbody td {
+ font-family:"le-monde-livre-std",TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif;letter-spacing:.02em;
+
+}
+
+.page .error-page h1 {
+  text-align: center;
+  border: none;
+  font-weight: 700;
+  font-size: 70px;
+  color: #ffac00;
+}
+
+.page .error-page h2 {
+  text-align: center;
+  border: none;
+  font-weight: 400;
+}
+
+.page .error-page h2 a {
+  font-weight: 700;
+}
+
+
+@media (max-width: 716px) {
+  .page .error-page h1 {
+    font-size: 36px;
+  }
+}
+
+span.search-items {
+  font-weight: 400;
+}
+
+p.no-items {
+  text-transform: uppercase;
+  padding: 0px 0 90px;
+}
+
+p.no-items-heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 70px;
+  color: #ffac00;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 716px) {
+  p.no-items-heading {
+    font-size: 36px;
+  }
+}
+
+.cart .empty-cart {
+  text-align: center;
+  padding-bottom: 68px;
+}
+
+.cart .empty-cart h1 {
+  border: none;
+}
+
+.cart .empty-cart h2 {
+
+}
+
+.cart .empty-cart .pure-button {
+}
+
+
+@media (max-width: 767px) {
+  
+  .cart  {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .cart .empty-cart h1 {
+  font-weight: 700;
+  border-bottom: 1px solid #f1f2f2;
+  border-top: 1px solid #f1f2f2;
+  padding: 19px 0;
+  }
+  
+  .cart .empty-cart .pure-button {
+  }
+}
+
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  box-sizing: border box;
+}
+
+
+/*Firefox - Fix Currency Select Look */
+@-moz-document url-prefix() {
+.pure-form .clean-select select {
+    -moz-appearance: menulist-text;
+    padding: 4px 0;
+/* definitions go here */
+}
+  
+  
+  .icon-down-open-big-end:after
+    
+    {top: 7px; right: 4px;
+    }
+    
+    .mixed-grid a .info {
+    background-color: transparent;
+    }
+}
+
+
+
+/*Product Page - Sizing Heading*/
+span.sizing-heading {
+  font-weight: bold;
+}
+
+
+
+
+.account-page article p, .account-page article h1 {
+  font-size: 12px;
+}
+
+.page p.plain {
+  font-size: 12px;
+}
+
+.account-page article h2, .account-page article h3 {
+  font-size: 12px;
+}
+
+.account-page .pure-form label {
+  font-size: 12px;
+}
+
+.account-page .pure-button {
+  font-size: 12px;
+}
+
+.collection_description {
+  font-family:"le-monde-livre-std",TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif;font-size:1em;
+  letter-spacing:.02em;
+  font-size: 13px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px; 
+}
+
+h2.collection_heading {
+  text-align: center;
+  color: #ffac00;
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: 0.15em;
+ 
+}
+
+@media (max-width: 767px) {
+  .collection_description {
+    max-width: 100%;
+  }
+  
+  h2.collection_heading {
+    font-size: 36px;
+  }
+}
+
+p.last_chance {
+  font-family: 'brandon-grotesque';
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: #ffac00;
+  margin: 0;
+  padding: 0;
+}
+
+
+.mixed-grid .info h2, .mixed-grid .info h4 {
+  font-size: 12px; }
+
+.mixed-grid .info h4 {
+  padding-bottom: 5%;
+}
+
+.mixed-grid .info h3 {
+  font-size: 15px; }
+
+
+li a.sale_link {
+  font-weight: 700;
+  color: red;
+}
+
+
+/***Main Promo Image Mobile***/
+
+ @media (max-width:480px) { 
+  
+    .mixed-grid .pure-u-1 { overflow: hidden }
+    .mixed-grid .pure-u-1 img {
+        margin-left: 0%;
+        width: 100%;
+    }
+ 
+}
+
+.mixed-grid .item { position: relative }
+.mixed-grid a .info { opacity: 0;background-color:#ffab00;height:100%;width:100%;text-align:center;padding:0 10%;text-transform:uppercase;color:#000;position:absolute;top:0;left:0 }
+.mixed-grid a { -webkit-transition: opacity .35s ease;-ms-transition:opacity .35s ease;transition:opacity .35s ease }
+.mixed-grid:hover a { opacity: 1 }
+form.inline { display: inline }
+.mixed-grid:hover .item:hover a { opacity: 0.8; }
+.mixed-grid a:hover .info,
+.mixed-grid a.hovered .info { -webkit-transition: opacity .35s ease;-ms-transition:opacity .35s ease;transition:opacity .35s ease;opacity:1 }
+.mixed-grid .item.nohover a:hover .info { display: none }
+.mixed-grid .info h2 { padding-top: 12%;font-weight:500 }
+.mixed-grid .info h2,
+.mixed-grid .info h3 { margin-top: 0;font-size:.75em }
+.mixed-grid .info h4 { font-size: .75em;position:absolute;bottom:0;padding-bottom:12%;left:0;width:100%;font-weight:500 }
+
+
+.product-list:hover .item,
+.product-list.item-open .item,
+.blog:hover .item { opacity: 1 }
+.product-list:hover .item:hover,
+.blog:hover .item:hover { opacity: 1; }
+
+
+@media (min-width: 601px) and (max-width: 960px){
+    .frame {padding:0 30px;}
+
+    .pure-button.list-button {
+      display: none;
+    }
+}
+
+@media (max-width: 960px){
+
+    .pure-button.list-button {
+      display: none;
+    }
+
+    .product-list .item {
+      padding-bottom: 20px;
+    }
+}
+
+.product-details-frame {
+  padding: 0 2%;
+}
+
+h2.product-classification {
+  display: none;
+}
+
+a.contact-link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a.contact-link:hover {
+  font-weight: 900;
+}

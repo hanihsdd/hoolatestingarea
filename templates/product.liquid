@@ -1,0 +1,135 @@
+{% assign on_sale = false %}
+{% if product.compare_at_price > product.price %}
+  {% assign on_sale = true %}
+{% endif %}
+<section class="frame mobile-frame">
+<div class="product-mainview pure-g-r">
+      <div class="pure-u-1-2 pure-u-lrg-1 gallery">
+
+           <div class="main-image">
+              <img src="{{ product.featured_image.src | product_img_url: '1024x1024' }}" class="fill"> 
+              
+          </div>
+          
+              
+          <div class="mobile-swipe">
+              <div class="pure-g-r mobile-swipe-container">
+                     {% for image in product.images %}
+                        <div class="item pure-u-1-4 pure-u-med-1-4 pure-u-sm-1-4">
+                              <a href="{{ image.src | product_img_url: '1024x1024' }}" class="thumb {% if forloop.first %}active{% endif %}"><img src="{{ image.src | product_img_url: 'grande' }}" class="fill"></a> 
+                        </div>
+                    {% endfor %}
+
+               </div>
+           </div>
+      </div>
+      <div class="pure-u-1-2 pure-u-lrg-1 product-details">
+        		
+        		<!--  
+        		{% if on_sale %} <h2>Sale</h2>{% endif %}
+                {% if product.collections contains 'New' %}<h2>New</h2>{% endif %}-->
+			   <div class="product-top">
+                 <h1>{{ product.title }}</h1>
+                 <h2>{{ product.metafields.custom_fields.subtitle }}</h2>
+                  
+               	  <p class="price-block">  
+ 
+                    {% if on_sale %}
+                    {{ product.price | money }} 
+                    <span class="old-price">{{ product.compare_at_price | money }}</span> 
+                    {% else %}
+                      {{ product.price | money }}
+                    {% endif %}
+
+                    </p>   
+        	  </div> 
+              <h3 class="colapsable-toggle" data-id="product-details">Product details</h3>
+              <div class="description colapsable" id="product-details">
+                  {{ product.description }}
+              </div> 
+              <h3 class="colapsable-toggle colapsed" data-id="product-care">Fabric & Care</h3>
+              <div class="description colapsable colapsed" id="product-care">
+                 	<p>{{ product.metafields.custom_fields.fabric }}</p>
+              </div>
+              <h3 class="colapsable-toggle colapsed" data-id="product-delivery">{{ pages.product-delivery.title }}</h3>
+              <div class="description colapsable colapsed" id="product-delivery">
+                  {{ pages.product-delivery.content }}
+              </div>
+             
+ 
+              <h3 class="alt-title size">Select your size <a href="/blogs/size-guide">(?)</a></h3>
+              <form id="{{ product.handle }}" class="pure-form pre-init product-form" data-handle="{{ product.handle }}" action="/cart/add" method="post" enctype="multipart/form-data">
+                    <div class="variants">
+                        <div class="selects"> 
+                          <select id="product-select-{{ product-handle }}" class="product-select special" name="id" class="hidden">
+                           {% for variant in product.variants %}
+                             <option value="{{ variant.id }}" {% unless variant.available %}disabled='disabled'{% endunless %}>{{ variant.title }} {% unless variant.available %}- Out of Stock {% endunless %}</option>
+                           {% endfor %}
+                           </select> 
+                           
+                        </div>
+                    </div>
+                        
+      
+                  <h4 class="alt-title" >Select a quantity</h4>
+                  <div class="buy-tool">
+                   <p><span class="hide-mobile">Price:</span> 
+
+                    {% if on_sale %}{{ product.price | money }}
+                    {% else %}{{ product.price | money }}{% endif %}
+
+                    </p>
+                      <input type="text" value="1" class="qty">
+                      {% if product.available %}
+                        <button class="pure-button submit" type="submit" >+ add to cart</button>
+                      {% else %}
+                        <button class="pure-button submit" type="submit" disabled="disabled" >sold out</button>
+                      {% endif %}
+                  </div>
+                
+                  <div class="social">
+                      
+                          <a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ product.url }}" title="Like It"><i class="icon-facebook"></i></a>
+                          <a href="http://twitter.com/intent/tweet?url={{ site.url }}{{ product.url }}&text={{ product.title }}" title="Tweet It"><i class="icon-twitter"></i></a>
+                          <a href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ product.url }}" data-url="{{ site.url }}{{ product.url }}" class="pinit" title="Pin It"><i class="icon-pinterest"></i></a>
+                   </div> 
+              </form>
+          <div class="product-added"> 
+                  	
+                          <p class="product-selection"></p>
+                          <h1>{{ product.title }}</h1>
+                          <h2>{{ product.metafields.custom_fields.subtitle }}</h2>
+                          <p class="msg">ADDED TO CART</p>
+                          <p class="button-row match-width"><a href="/cart/" class="pure-button primary match-button">GO TO CART</a></p>
+                          <p class="button-row match-width"><a href="/collections/all/" class="pure-button match-button product-return">CONTINUE SHOPPING</a></p>
+                  		
+        		</div>
+      </div>
+  </div>
+</section>
+<section>   
+  <div class="frame mobile-frame">
+      <h4 class="alt-title pinched section-title" >WEAR THIS WITH...</h4>
+       <div class="related-products pure-g-r product-list collection-block">
+        {% for slide in (1..4) %}
+                    
+            {% assign labelGroup = 'related_' %}
+            {% assign field = labelGroup | append: slide %}
+            {% assign handle = product.metafields.custom_fields[field] %}
+            {% if product.metafields.custom_fields[field] %}
+              <div class="fetch-related" data-handle="{{ handle }}">
+                 
+              </div>
+
+
+            {% endif %} 
+        {% endfor %}
+        </div>
+  </div> 
+</section>
+
+
+
+
+
+

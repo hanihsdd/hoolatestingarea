@@ -1,0 +1,51 @@
+
+
+<div id="searchresults">
+
+  
+  {% if search.performed %}
+    
+    {% paginate search.results by 24 %}
+    
+
+  
+    {% if search.results_count == 0 %}  
+    <p class="no-items-heading">No Items Found</p>
+    <p class="text-center no-items">Your search for <strong>"{{ search.terms }}"</strong> did not yield any results.</p>              
+    {% else %}
+
+    <div class="frame mobile-frame">
+    
+    <div class="search-terms">SEARCH RESULTS: <span class="search-items">{% if search.results.size > 0 %}
+      {{ search.results_count }} {{ search.results_count | pluralize: 'item', 'items' }} found for</span> 
+    {% endif %} "{{ search.terms }}"</div >
+    <div class="pure-g-r product-list collection-block">
+    <!-- items -->
+          {% for product in search.results %}      
+            {% include 'product-grid-item' with 'three-per-row' %}
+          {% else %}
+          <p>There are no products in this view.</p>
+          {% endfor %}
+      <!-- end items -->              
+    </div>   
+
+
+    {% if paginate.pages > 1 %}
+    <!-- paging -->
+    <div id="pagination">
+      {{ paginate | default_pagination }}
+    </div>
+    <!-- end paging -->
+    {% endif %}
+</div>  
+
+
+    {% endif %}    
+    
+   
+    
+    {% endpaginate %}    
+    
+  {% endif %}  
+
+</div>

@@ -1,0 +1,118 @@
+{% assign on_sale = false %}
+{% assign new_product = false %}
+{% if product.compare_at_price > product.price %}
+  {% assign on_sale = true %}
+{% endif %}
+
+{% for collection in product.collections %}
+  {% if collection.title == 'New' %}
+    {% assign new_product = true %}
+  {% endif %}
+{% endfor %}
+
+
+ <div class="item pure-u-1-4 pure-u-med-1-2 pure-u-lrg-1-3 pure-u-sm-1-2 {% for variant in product.variants %}{% if variant.available %}{% else %} {{ variant.title }}-unavailable{% endif %}{% endfor %}">
+    <a href="{{ product.url | within: collection }}">
+        {% include 'responsive-product-image' %}
+        <div class="mobile-inner-frame product-details-frame">
+          
+          <h2 class="product-classification"> 
+          {% if product.available != true %}
+              Sold out
+          {% elsif on_sale %}
+              Sale
+          {% elsif new_product %}
+              New    
+          {% endif %}
+          </h2>  
+
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.metafields.custom_fields.subtitle }}</p>
+        
+          <h4> {% if on_sale %}
+          
+          <span class="old-price">{{ product.compare_at_price | money }}</span> <span class="sale-price">{{ product.price | money }}</span>
+          {% else %}
+            {{ product.price | money }}
+          {% endif %}</h4>   
+        </div> 
+    </a>        
+    <div class="product-options mobile-inner-frame">
+        <a class="pure-button list-button" href="{{ product.url | within: collection }}">View</a>
+        <a class="pure-button open-quickview list-button" href="#">Quickshop</a>
+
+    </div>
+    <div class="product-quickview ">
+        <div class="product-quickview-col">
+             <a href="{{ product.url | within: collection }}">{% include 'responsive-product-image' %}</a>
+        </div>
+        <div class="product-quickview-col product-details">
+                <button class="pure-button close close-quickview">×</button>
+                <div class="product-top">
+                 <h1>{{ product.title }}</h1>
+                 <h2>{{ product.metafields.custom_fields.subtitle }}</h2>
+                  
+                  <p class="price-block">  
+ 
+                    {% if on_sale %}
+                    {{ product.price | money }} 
+                    <span class="old-price">{{ product.compare_at_price | money }}</span> 
+                    {% else %}
+                      {{ product.price | money }}
+                    {% endif %}
+
+                    </p>   
+              </div> 
+                <div class="description">
+                   {{ product.description }}
+                   <p><a href="{{ product.url | within: collection }}">View full product details</a></p>
+                </div>
+          
+                <h3 class="alt-title size">Select your size <a href="/blogs/size-guide">(?)</a></h3>
+              <form id="item-{{ product.handle }}" class="pure-form pre-init" data-handle="{{ product.handle }}" action="/cart/add" method="post" enctype="multipart/form-data">
+                    <div class="variants">
+                        <div class="selects"> 
+                          <select  class="product-select special" name="id" >
+                           {% for variant in product.variants %}
+                             <option value="{{ variant.id }}" {% unless variant.available %}disabled='disabled'{% endunless %}>{{ variant.title }} {% unless variant.available %}- Out of Stock{% endunless %}</option>
+                           {% endfor %}
+                           </select> 
+                           
+                        </div>
+                    </div>
+                        
+      
+                  <h4 class="alt-title" >Select the quantity</h4>
+                  <div class="buy-tool">
+                   <p>Price: 
+
+                    {% if on_sale %}
+                     {{ product.price | money }}
+                    {% else %}
+                      {{ product.price | money }}
+                    {% endif %}
+
+                    </p>
+                      <input type="text" value="1" class="qty">
+                      {% if product.available %}
+                        <button class="pure-button submit" type="submit" >+ add to cart</button>
+                      {% else %}
+                        <button class="pure-button submit" type="submit" disabled="disabled" >sold out</button>
+                      {% endif %}
+                  </div>
+                
+                
+              </form>
+            <div class="product-added"> 
+                    
+                          <p class="product-selection"></p>
+                          <h1>{{ product.title }}</h1>
+                           <h2>{{ product.metafields.custom_fields.subtitle }}</h2>
+                          <p class="msg">ADDED TO CART</p>
+                          <p class="button-row"><a href="/cart/" class="pure-button primary match-button">GO TO CART</a></p>
+                          <p class="button-row"><a href="/collections/all/" class="pure-button match-button continue-shopping close-quickview">CONTINUE SHOPPING</a></p>
+                      
+            </div>
+        </div>
+    </div>
+</div>

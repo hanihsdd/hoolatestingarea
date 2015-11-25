@@ -1,0 +1,19 @@
+
+<section class="frame">
+    <div class="pure-g-r page">
+        <div class="pure-u-1-4 pur-u-med-1-4 side-bar">
+            <nav>
+              <h2>HELP</h2>
+              <ul>
+                  {% for link in linklists.help-menu.links %}
+                      <li {% if link.active %}class="pure-menu-selected"{% endif %}><a href="{{ link.url }}">{{ link.title }}</a></li>
+                  {% endfor %}
+              </ul>
+          </nav>
+        </div>
+       <section class="pure-u-3-4  pur-u-med-3-4 rte page-content">
+                <h1>{{ page.title }}</h1>
+                {{ page.content }}
+        </article>
+    </div>
+</section>

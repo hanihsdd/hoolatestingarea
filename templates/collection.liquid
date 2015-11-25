@@ -1,0 +1,39 @@
+<section class='section'>
+
+{% paginate collection.products by 24 %}
+<div>
+    {% include 'filter-menu' %}
+</div>
+<div class="frame mobile-frame">
+   {% if collection.description %}
+  <p class="collection_description">{{ collection.description }} </p>
+    {% endif %}
+  <div class="pure-g-r product-list collection-block">
+  <!-- items -->
+        {% for product in collection.products %}
+          {% include 'product-grid-item' with 'three-per-row' %}
+        {% else %}
+        <p>There are no products in this view.</p>
+        {% endfor %}
+    <!-- end items -->              
+  </div>   
+
+
+  {% if paginate.pages > 1 %}
+  <!-- paging -->
+  <div id="pagination">
+    {{ paginate | default_pagination }}
+  </div>
+  <!-- end paging -->
+  {% endif %}
+</div>  
+
+
+
+
+
+
+
+
+{% endpaginate %}
+</section>

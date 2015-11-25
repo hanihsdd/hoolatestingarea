@@ -1,0 +1,36 @@
+
+<section class="frame">
+   <div class="page">
+     <div class="pure-g-r  blog-post">
+        <div class="pure-u-1-4 side-bar">
+            <nav>
+             <ul >
+                  <li class="page-title">Press</li>
+
+                  
+                      {% if blog.previous_article %}
+                        <li>{{ 'PREVIOUS' | link_to: blog.previous_article }}</li>
+                      {% endif %}
+
+                      {% if blog.next_article %}
+                        <li>{{ 'NEXT' | link_to: blog.next_article }}</li>
+                      {% endif %}
+                  
+                  
+                          <li class="back-button"><a href="{{ blog.url }}">BACK TO {{ blog.title }}</a></li>
+              </ul>
+
+          </nav>
+        </div>
+        <article class="pure-u-3-4 ">
+                <h1>{{ article.title }}</h1>
+                <h2 class="date">
+                  <time pubdate datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%B %Y' }}</time>
+                </h2>
+               <div class="rte">
+                {{ article.content }}
+              </div>
+        </article>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,100 @@
+<section class="frame page">
+    <div class="pure-g-r">
+        <div class="pure-u-1-4 pur-u-med-1-4 side-bar">
+            <nav>
+       
+              <ul class="scroll-navigion">
+                <li class="page-title">Frequently Asked Questions</li>
+                  {% for link in linklists.faq-menu.links %}
+                      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                  {% endfor %}
+              </ul>
+          </nav>
+        </div>
+        <section class="pure-u-3-4  pur-u-med-3-4 rte page-content">
+          		<div class="colapse-group">
+          		<h2 id="shopping" class="colapse-group-title">{{ blogs.faq-shopping.title }}</h2>
+                
+          		{% paginate blogs.faq-shopping.articles by 50 %}
+                {% for article in blogs.faq-shopping.articles %}
+                <article id="{{ article.title | handlize }}" class="colapsable-basic">
+                  <h1 class="colapse-item"><a href="#{{ article.title | handlize }}">{{ article.title }}</a></h1>
+                <div class="content">
+                  {{ article.content }}
+                  </div>
+                
+                </article>
+                {% endfor %}
+                {% endpaginate %}
+      			</div>
+          		<div class="colapse-group">
+          		<h2 id="delivery" class="colapse-group-title">{{ blogs.faq-delivery.title }}</h2>
+                
+          		{% paginate blogs.faq-delivery.articles by 50 %}
+                {% for article in blogs.faq-delivery.articles %}
+                <article id="{{ article.title | handlize }}" class="colapsable-basic">
+                  <h1 class="colapse-item"><a href="#{{ article.title | handlize }}">{{ article.title }}</a></h1>
+                
+                  <div class="content">
+                  {{ article.content }}
+                  </div>
+
+                
+                </article>
+                {% endfor %}
+                {% endpaginate %}
+      			</div>
+          		<div class="colapse-group">
+          		<h2 id="returns" class="colapse-group-title">{{ blogs.faq-returns.title }}</h2>
+                
+          		{% paginate blogs.faq-returns.articles by 50 %}
+                {% for article in blogs.faq-returns.articles %}
+                <article id="{{ article.title | handlize }}" class="colapsable-basic">
+                  <h1 class="colapse-item"><a href="#{{ article.title | handlize }}">{{ article.title }}</a></h1>
+                
+                  <div class="content">
+                  {{ article.content }}
+                  </div>
+
+                
+                </article>
+                {% endfor %}
+                {% endpaginate %}
+      			</div>
+          		 <div class="colapse-group">
+                <h2 class="account" class="colapse-group-title">{{ blogs.faq-account.title }}</h2>
+               
+                {% paginate blogs.faq-account.articles by 50 %}
+                {% for article in blogs.faq-account.articles %}
+                <article id="{{ article.title | handlize }}" class="colapsable-basic">
+                  <h1 class="colapse-item"><a href="#{{ article.title | handlize }}">{{ article.title }}</a></h1>
+                
+                  <div class="content">
+                  {{ article.content }}
+                  </div>
+
+                
+                </article>
+                {% endfor %}
+                {% endpaginate %}
+          		</div>
+          		<div class="colapse-group">
+          		<h2 id="hoola" class="colapse-group-title">{{ blogs.faq-hoola.title }}</h2>
+          		
+                {% paginate blogs.faq-hoola.articles by 50 %}
+                {% for article in blogs.faq-hoola.articles %}
+                <article id="{{ article.title | handlize }}" class="colapsable-basic">
+                  <h1 class="colapse-item"><a href="#{{ article.title | handlize }}">{{ article.title }}</a></h1>
+                
+                  <div class="content">
+                  {{ article.content }}
+                  </div>
+
+                
+                </article>
+                {% endfor %}
+                {% endpaginate %}
+          		</div>
+        </section>
+    </div>
+</section>

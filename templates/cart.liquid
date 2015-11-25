@@ -1,0 +1,216 @@
+<div class="cart frame">
+
+  
+{% if cart.item_count > 0 %}
+
+<form action="/cart" method="post">
+  <h1>My Cart <span class="push-right">{{ cart.item_count }} {{ cart.item_count | pluralize: 'Item', 'Items' }}</span></h1>
+
+  <div class="pure-g-r cart-total mobile-only">
+          <div class="pure-u-3-5 pure-u-med-3-5 pure-u-sm-3-5 cart-subtotal ">
+              <h3>Subtotal  <span class="small-print">(EXCLUDING DELIVERY)</span> </h3>
+          </div>
+          <div class="pure-u-2-5 pure-u-med-2-5 pure-u-sm-2-5 cart-subtotal">
+              <h3 class="text-right">{{ cart.total_price | money }}</h3>
+          </div>
+          <div class="pure-u-1">
+            <p><input type="submit" name="checkout" value="CHECKOUT" class="pure-button primary fill" /></p> 
+              
+              <!--p><input type="submit" name="update" value="Update cart" class="pure-button fill" /></p--> 
+               {% comment %}Paypal and Google checkout buttons{% endcomment %}
+              {% if additional_checkout_buttons %}
+              <p class="additional-checkout-buttons">
+                {{ content_for_additional_checkout_buttons }}
+              </p>
+              {% endif %}  
+          </div>
+    
+    
+  </div>
+
+
+  <table>
+    
+    <thead>
+      <tr>
+        <th class="f">Item</th>
+        <th>Description</th>
+        <th class="c">Remove</th>
+        <th class="c">Price</th>
+        <th class="c">Quantity</th>
+        <th class="c">Subtotal</th>
+      </tr>
+    </thead>
+    
+    <tbody class="cart-items">
+
+    {% for item in cart.items %}    
+    
+      {% comment %}
+      Determining the handle of the collection that was last seen for the 'continue shopping' link.
+      {% endcomment %}
+      
+      {% if forloop.first %}
+        {% assign collection_url = item.product.collections.first.url %}
+        {% if collection_url == '/collections/frontpage' or collection_url == '' %}{% assign collection_url = '/collections/all' %}{% endif %}
+      {% endif %}
+
+      <tr>
+        <td class="f">
+          <a href="{{ item.product.url  }}">  
+            <img src="{{ item.product.featured_image.src | product_img_url: 'large' }}" alt="{{ item.title | escape }}" />
+          </a>
+        </td>
+        <td>
+          <h2>
+            <a href="{{ item.product.url }}">
+            {{ item.product.title }}
+            
+            </a>
+          </h2>
+          <h3>{{ item.product.metafields.custom_fields.subtitle }}</h3>
+          <p class="clear">
+            Size: <strong>{{ item.variant.title }}</strong>
+
+            <a href="/cart/change?line={{ forloop.index }}&quantity=0" class="remove-link remove-link-mobile">REMOVE</a>
+          </p>
+           <div class="mobile-only">
+             <div class="pure-g-r cart-mobile-actions">
+               <div class="pure-u-1-3 pure-u-med-1-3 pure-u-sm-1-3">PRICE: <strong>{{ item.price | money }}</strong></div>
+               <div class="pure-u-1-3 pure-u-med-1-3 pure-u-sm-1-3 cart-qty">QTY:<br><input type="text" data-id="#updates_{{ item.id }}" name="dummy" class="mobile-qty-field qty-inputs" id="updates_dummy_{{ item.id }}" value="{{ item.quantity }}" /></div>
+               <div class="pure-u-1-3 pure-u-med-1-3 pure-u-sm-1-3 text-right">SUBTOTAL: <strong>{{ item.line_price | money }}</strong></div>
+             </div>
+
+             
+
+           </div>
+        </td>
+
+        <td class="c">
+          <a class="remove-link" href="/cart/change?line={{ forloop.index }}&quantity=0">X</a>
+        </td>
+        <td class="c">{{ item.price | money }}</td>
+        <td class="c">
+          <input type="text" name="updates[]" class="qty-input qty-inputs" id="updates_{{ item.id }}" data-variant-id="{{ item.variant.id }}" data-max-qty="{{ item.variant.inventory_quantity }}" value="{{ item.quantity }}" />
+        </td>
+        <td class="c">{{ item.line_price | money }}</td>
+        
+      </tr>
+    {% endfor %}
+    
+    </tbody>
+    
+  </table>
+  <div class="pure-g-r cart-total desktop-only">
+    
+
+
+    <div class="pure-u-3-5 cart-total-left">
+         <p><img src="{{ 'cards.jpg' | asset_url }}" class="fill max" alt=""></p>
+         <p class="small">PLEASE NOTE THAT YOUR CARD WILL BE CHARGED IN BRITISH POUND STERLING (GBP £). THE PRICE SHOWN IN YOUR LOCAL CURRENCY IS AN ESTIMATE AND MAY DIFFER BASED ON THE EXCHANGE RATE USED BY YOUR CREDIT CARD.</p>
+    </div>
+        <div class="pure-u-2-5  ">
+         <div class="pure-g-r">
+          <div class="pure-u-3-5 pure-u-med-3-5 pure-u-sm-3-5 cart-subtotal ">
+              <h3>Subtotal  <span class="small-print">(EXCLUDING DELIVERY)</span> </h3>
+          </div>
+          <div class="pure-u-2-5 pure-u-med-2-5 pure-u-sm-2-5 cart-subtotal">
+              <h3 class="text-right">{{ cart.total_price | money }}</h3>
+          </div>
+
+          <div class="pure-u-3-5 pure-u-med-3-5 pure-u-sm-3-5">
+              <p class="small"> <strong>HAVE A GIFT CARD OR DISCOUNT CODE?</strong>
+YOU CAN INPUT THIS AT CHECKOUT</p>
+          </div>
+          <div class="pure-u-2-5 pure-u-med-2-5 pure-u-sm-2-5 text-right cart-buttons">
+              <p><input type="submit" name="checkout" value="CHECKOUT" class="pure-button fill primary" /></p>  
+             
+
+              <!--p><input type="submit" name="update" value="Update cart" class="pure-button fill" /></p--> 
+
+              {% comment %}Paypal and Google checkout buttons{% endcomment %}
+              {% if additional_checkout_buttons %}
+              <p class="additional-checkout-buttons">
+                {{ content_for_additional_checkout_buttons }}
+              </p>
+              {% endif %}  
+          </div>
+         </div>
+         
+          
+
+         
+          
+            
+            </div>
+    
+    
+  </div>
+
+
+ <div class="pure-g-r cart-total mobile-only">
+     <div class="pure-u-3-5 pure-u-med-3-5 pure-u-sm-3-5 cart-subtotal ">
+              <h3>Subtotal  <span class="small-print">(EXCLUDING DELIVERY)</span> </h3>
+          </div>
+          <div class="pure-u-2-5 pure-u-med-2-5 pure-u-sm-2-5 cart-subtotal">
+              <h3 class="text-right">{{ cart.total_price | money }}</h3>
+          </div>
+          <div class="pure-u-1">
+            <p><input type="submit" name="checkout" value="CHECKOUT" class="pure-button primary fill" /></p> 
+              
+              <!--p><input type="submit" name="update" value="Update cart" class="pure-button fill" /></p--> 
+               {% comment %}Paypal and Google checkout buttons{% endcomment %}
+              {% if additional_checkout_buttons %}
+              <p class="additional-checkout-buttons">
+                {{ content_for_additional_checkout_buttons }}
+              </p>
+              {% endif %}  
+          </div>
+
+    <div class="pure-u-1 ">
+         <div class="text-center">
+          <img src="{{ 'cards.jpg' | asset_url }}" class="fill max" alt="">
+         </div>
+         <p class="small">PLEASE NOTE THAT YOUR CARD WILL BE CHARGED IN BRITISH POUND STERLING (GBP £). THE PRICE SHOWN IN YOUR LOCAL CURRENCY IS AN ESTIMATE AND MAY DIFFER BASED ON THE EXCHANGE RATE USED BY YOUR CREDIT CARD.</p>
+    </div>
+     
+        
+          
+
+          <div class="pure-u-1 divided">
+              <p class="small"> <strong>HAVE A GIFT CARD OR DISCOUNT CODE?</strong>
+YOU CAN INPUT THIS AT CHECKOUT</p>
+          </div>
+          
+         
+          
+
+         
+          
+        
+    
+    
+  </div>
+
+
+
+  
+  
+  <div>
+    
+  </div>
+  
+  
+
+</form>
+
+{% else %}
+<div class="empty-cart">
+<h1>Shopping Cart</h1>
+
+  <h2>It appears that your cart is currently empty!</h2>
+  <h3><a href="/collections/all" class="pure-button">Start Shopping</a></h3>
+</div>
+
+{% endif %}
+</div>

@@ -1,0 +1,66 @@
+<section class='section' id='next'>
+            
+            <div class="frame rel">
+            	<div class="rel">
+                <div class="mixed-grid lookbook-grid pure-g-r">
+                    {% for slide in (1..30) %}
+                    
+			            {% assign labelGroup = 'lookbook_' %}
+			            {% assign enabled = labelGroup | append: 'enabled_' | append: slide %}
+			            {% assign title = labelGroup | append: 'title_' | append: slide %}
+			            {% assign description = labelGroup | append: 'description_' | append: slide %}
+			            {% assign link = labelGroup | append: 'link_' | append: slide %}
+			            {% assign link_title = labelGroup | append: 'link_title_' | append: slide %}
+			            {% assign link_enabled = labelGroup | append: 'link_enabled_' | append: slide %}
+			            {% assign layout_template = labelGroup | append: 'template_' | append: slide %}
+			            {% assign image = labelGroup | append: 'image_' | append: slide | append: '.jpg' %}
+			            {% assign image_large = labelGroup | append: 'image_large_' | append: slide | append: '.jpg' %}
+			           
+			            {% if settings[enabled] == true %}
+			                <article class="item {{ settings[layout_template] }}">
+		                        <a href="#popup-slide-{{ slide }}"><img src="{{ image | asset_url }}" alt=""></a>
+		                    </article>
+			            {% endif %}
+			        {% endfor %}
+                    
+                </div>   
+                	<div class="lookbook-popup">
+                		 {% for slide in (1..30) %}
+                    
+			            {% assign labelGroup = 'lookbook_' %}
+			            {% assign enabled = labelGroup | append: 'enabled_' | append: slide %}
+			            {% assign title = labelGroup | append: 'title_' | append: slide %}
+			            {% assign description = labelGroup | append: 'description_' | append: slide %}
+			            {% assign link = labelGroup | append: 'link_' | append: slide %}
+			            {% assign link_title = labelGroup | append: 'link_title_' | append: slide %}
+			            {% assign link_enabled = labelGroup | append: 'link_enabled_' | append: slide %}
+			            {% assign layout_template = labelGroup | append: 'template_' | append: slide %}
+			            {% assign image = labelGroup | append: 'image_' | append: slide | append: '.jpg' %}
+			            {% assign image_large = labelGroup | append: 'image_large_' | append: slide | append: '.jpg' %}
+			           
+			            {% if settings[enabled] == true %}
+			                <article class="popup-item" id="popup-slide-{{ slide }}">
+                        		
+		                      
+		                            <div class="expanded">
+		                                <img src="{{ image_large | asset_url }}">
+		                                <div class="look-info">
+		                                    <h2>{{ settings[title] }}</h2>
+		                                    <p>{{ settings[description] }}</p>
+		                                     {% if settings[link_enabled] == true %}<a href="{{ settings[link] }}">{% endif %}<h3>{{ settings[link_title] }}</h3>{% if settings[link_enabled] == true %}</a>{% endif %}
+		                                </div>
+		                            </div>
+		                            
+		                            
+		                        
+		                        <button class="pure-button close">×</button>
+		                    </article>
+			            {% endif %}
+			        {% endfor %}
+
+                	</div>
+                </div>	
+            </div>  
+            
+
+        </section>

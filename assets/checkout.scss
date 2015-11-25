@@ -1,0 +1,66 @@
+.header {
+  border-top: 5px solid #ffac00;
+}
+
+/* Logo Center */
+
+.shop {
+  margin: 0 auto;
+  max-width: 200px;
+  float: none;
+}
+
+.shop__logo {
+  max-width: 100%;
+}
+
+/*Buttons*/
+
+.btn {
+  background: #ffac00;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.btn:hover {
+  background: #ffc54c;
+  color: #fff;
+}
+
+.btn.btn--primary {
+  background: #ffac00;
+  color: #fff;
+}
+
+.btn.btn--primary:hover {
+  background: #ffc54c;
+  color: #fff;
+}
+
+.btn.btn--primary:focus{
+  background: #ffc54c;
+  color: #fff;
+}
+
+/*Tax*/
+
+.total-line.total-line--taxes {
+display: none;
+}
+
+/*Total Prices*/
+
+.payment-due__price {
+  color: #231f20;
+}
+
+.payment-method-total {
+  color: #231f20;
+}
+
+/*Savings*/
+
+.savings {
+  display: none;
+  }

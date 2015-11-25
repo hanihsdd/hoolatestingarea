@@ -1,0 +1,363 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->  
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>
+    {% if template == 'index' %}{% if page_title contains 'Welcome' %}{{ shop.name }} &ndash; Welcome{% else %}{{ page_title }}{% endif %}{% elsif template == '404' %}Page Not Found{% elsif page_title contains shop.name %}{{ page_title }}{% else %}{{ page_title }} &ndash; {{ shop.name }}{% endif %}
+  </title>
+  
+  <link rel="shortcut icon" href="{{ 'favicon2.png' | asset_url }}" type="image/png" />
+
+  {% if page_description %}
+  <meta name="description" content="{{ page_description }}" />
+  {% endif %}
+
+  <link rel="canonical" href="{{ canonical_url }}" />
+
+  
+  <meta name="p:domain_verify" content="ce854c0ba15bed55f5924b08a492255f"/>
+  <meta name="google-site-verification" content="w7TUcVCb-q1XB94dh4ZgfATHt5wfmM6LRSnzzjjxJHU" />
+  
+  <script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '630534523729066']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script> 
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=630534523729066&amp;ev=PixelInitialized" /></noscript>
+
+  {{ content_for_header }}
+  {% include 'header.meta' %}
+
+
+  <!--[if lt IE 9]>
+  {{ '//html5shiv.googlecode.com/svn/trunk/html5.js' | script_tag }}
+  <![endif]-->
+
+  {% if template contains 'customers' %}
+  {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+  {{ 'customer_area.js'  | shopify_asset_url | script_tag }}
+  {% endif %}
+
+  <link rel="stylesheet" href="{{ 'main.css' | asset_url }}">
+  <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+  {{ 'modernizr.js' | asset_url | script_tag }}
+
+ 
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="{{ 'picturefill.js' | asset_url }}" async></script>
+<script type="text/javascript" src="//use.typekit.net/rji1noi.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body>
+  <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+  {% if settings.site_banner_enabled %}
+    <div class="page-banner desk">
+      {{ settings.site_banner_message }}
+    </div>
+    {% endif %}
+  <header id="top">
+            <div class="pure-g-r frame ">
+                <div class="header-group">
+                <div class="pure-u-1-4 currency-switch pure-u-med-1-4 pure-u-sm-1-4">
+                    <button class="mobile-toggle toggle-dropdown mobile-nav-toggle" data-href="#main-menu" data-toggle-class="open-mobile">MENU <i class="icon-menu"></i></button>
+                    <form class="pure-form pure-form-horizontal desktop-currency-tool"><label for="cur">Currency</label>
+
+                    <div class="select clean-select inline icon-down-open-big-end "><select  id="currencies" name="currencies">
+                       {% capture codes %},USD,EUR,GBP,CAD,ARS,AUD,BBD,BDT,BSD,BHD,BRL,BOB,BND,BGN,MMK,KYD,CLP,CNY,COP,CRC,HRK,CZK,DKK,DOP,XCD,EGP,XPF,FJD,GHS,GTQ,GYD,GEL,HKD,HUF,ISK,INR,IDR,NIS,JMD,JPY,JOD,KZT,KES,KWD,LVL,LTL,MXN,MYR,MUR,MDL,MAD,MNT,MZN,ANG,NZD,NGN,NOK,OMR,PKR,PYG,PEN,PHP,PLN,QAR,RON,RUB,SAR,RSD,SCR,SGD,SYP,ZAR,KRW,LKR,SEK,CHF,TWD,THB,TZS,TTD,TRY,UAH,AED,UYU,VEB,VND,ZMK,{% endcapture %}
+                        {% assign supported_codes = settings.supported_currencies | split: ' ' %}
+                        <option value="{{ shop.currency }}" selected="selected">{{ shop.currency }}</option>
+                        {% for code in supported_codes %}
+                          {% if code != shop.currency and codes contains code %}
+                          <option value="{{ code }}">{{ code }}</option>
+                          {% endif %}
+                        {% endfor %}
+                    </select>
+                  </div>
+                    </form>
+                </div>
+                <nav class="pure-u-3-4 pure-u-med-3-4 pure-u-sm-3-4 tools">
+                    <div class="pure-menu pure-menu-open pure-menu-horizontal sub-menu">
+                        <ul>
+                            <li class="search-item">
+                              <button class="mobile-toggle toggle-dropdown " data-href="#search-form" data-toggle-class="open-mobile"><i class="icon-search"></i></button>
+                              <form action="/search" method="get" class="search-form" id="search-form" role="search">
+                                        <input type="hidden" name="type" value="product" />
+                                        <input name="q" placeholder="Search" type="text" id="search-field">
+                                        <button type="submit" class="pure-button right search-btn"><i class="icon-search"></i></button>
+                            </form></li>
+                            
+                          
+                            {% if shop.customer_accounts_enabled %}
+                              <li>
+                                {% if customer %}
+                                   <a href="/account">Account</a>
+                                {% else %}
+                                   <a href="/account/login" class="hide-mobile" >Sign in</a>
+                                   <a href="/account/login" class="hide-desktop toggle-dropdown" data-href="#login-form" data-toggle-class="open-mobile">Sign in</a>
+                                   <form action="/account/login"  method="post" class="search-form login-form" id="login-form" role="search">
+                                        <input type="email" value="" placeholder="Email Address" name="customer[email]" id="customer_email" class="large" size="30" />
+                                         <input type="password" value="" placeholder="Password" name="customer[password]" id="customer_password" class="large password" size="16" />
+              
+                                        <input class="pure-button secondary" type="submit" value="Sign In" />
+
+                                        <div>
+                                          <a href="/account/register" class="basic-link">Create Account</a>
+                                        </div>
+
+                            </form>
+                                {% endif %}
+                              </li>
+                            {% endif %}
+                            
+                            <li class="basket"><a href="/cart">CART [<span class="cart-count">{{ cart.item_count }}</span>]</a>
+                              
+                            </li>
+                            
+                        </ul>
+                    </div>
+                   
+                </nav>
+                <div class="pure-u-1 logo">
+                      <a href="/"><img src="{{ 'logo.png' | asset_url }}" alt="Hoola">
+                      <h2>Cup Sized Swimwear in D+ Sizes</h2></a>
+                </div>
+                <nav class="pure-u-1 main-menu top-menu" id="main-menu">
+                     {% assign has_link_active = false %}
+                      {% for link in linklists.main-menu.links %}
+                          
+                          {% if link.active %}
+                            {% assign has_link_active = true %} 
+                          {% endif %}
+                      {% endfor %}
+                      <div class="pure-menu pure-menu-open pure-menu-horizontal {% if has_link_active %}
+                            has-active
+                          {% endif %}">
+                        
+
+                        <ul>
+                          
+                          
+                           {% for link in linklists.main-menu.links %}
+                                {% assign has_sub_menu = false %}
+                                {% assign has_sub_categories = false %}
+                                {% assign parent_link_active = false %}
+                                {% assign child_list_handle = link.title | handle %}
+                                {% if linklists[child_list_handle] and linklists[child_list_handle].links.size > 0 %}
+                                  {% assign has_sub_menu = true %}
+                                  {% for l in linklists[child_list_handle].links %}
+                                    {% if page_title == l.title %}
+                                      {% assign parent_link_active = true %}
+                                    {% endif %}
+                                  {% endfor %}
+                                {% elsif link.type == 'collection_link' and link.object.all_tags.size > 0 %}
+                                  {% assign has_sub_categories = true %}
+                                {% endif %}
+
+
+
+                                <li class="nav-item{% if forloop.first %} first{% elsif forloop.last %} last{% endif %}{% if link.active or parent_link_active %} pure-menu-selected{% endif %}{% if has_sub_menu or has_sub_categories %} has-dropdown{% endif %}">
+                                  {{ link.title | link_to: link.url }}
+                                  
+                                </li>
+                                {% endfor %}
+
+                             
+                                <li class="hide-desktop">
+                                  <form class="pure-form pure-form-horizontal desktop-currency-tool">
+                                    <label for="cur">Currency</label>
+                                    <div class="select clean-select inline icon-down-open-big-end "><select  id="currencies" name="currencies">
+                                         {% capture codes %},USD,EUR,GBP,CAD,ARS,AUD,BBD,BDT,BSD,BHD,BRL,BOB,BND,BGN,MMK,KYD,CLP,CNY,COP,CRC,HRK,CZK,DKK,DOP,XCD,EGP,XPF,FJD,GHS,GTQ,GYD,GEL,HKD,HUF,ISK,INR,IDR,NIS,JMD,JPY,JOD,KZT,KES,KWD,LVL,LTL,MXN,MYR,MUR,MDL,MAD,MNT,MZN,ANG,NZD,NGN,NOK,OMR,PKR,PYG,PEN,PHP,PLN,QAR,RON,RUB,SAR,RSD,SCR,SGD,SYP,ZAR,KRW,LKR,SEK,CHF,TWD,THB,TZS,TTD,TRY,UAH,AED,UYU,VEB,VND,ZMK,{% endcapture %}
+                                          {% assign supported_codes = settings.supported_currencies | split: ' ' %}
+                                          <option value="{{ shop.currency }}" selected="selected">{{ shop.currency }}</option>
+                                          {% for code in supported_codes %}
+                                            {% if code != shop.currency and codes contains code %}
+                                            <option value="{{ code }}">{{ code }}</option>
+                                            {% endif %}
+                                          {% endfor %}
+                                      </select>
+                                    </div>
+                                    </form>
+                                </li>  
+                        </ul>
+                    </div>
+                </nav>
+                {% if template == 'collection' %}
+                 <nav class="pure-u-1 main-menu " id="collections-menu">
+                      {% assign has_link_active = false %}
+                      {% for link in linklists.main-menu.links %}
+                          
+                          {% if link.active %}
+                            {% assign has_link_active = true %} 
+                          {% endif %}
+                      {% endfor %}
+                      <div class="pure-menu pure-menu-open pure-menu-horizontal {% if has_link_active %}has-active{% endif %}">
+                        <ul>
+                            {% for link in linklists.shop-menu.links %}
+                                
+                                <li class="nav-item{% if forloop.first %} first{% elsif forloop.last %} last{% endif %}{% if link.active %} pure-menu-selected{% endif %}">
+                                  {{ link.title | link_to: link.url }}
+                                </li>
+                         
+                                {% endfor %}
+                          
+                        </ul>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+            </div>
+        </header>
+         <div class="full-page">
+          {{ content_for_layout }}
+        <footer>
+            <div class="frame mobile-frame">
+                <div class='pure-g-r bracket-grid'>
+                    <div class="pure-u-1-4 pure-u-med-1-4 " >
+                       <form action="http://hoola.us1.list-manage1.com/subscribe/post?u=c28e63c2af8cb17594109c46b&amp;id=91f1b4ae2e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="contact-form pure-form" target="_blank" _lpchecked="1">
+                           <label>Join Our newsletter</label>
+                           <div class="simple-form">
+                              
+
+
+
+                               
+                                  <input type="email" value="" name="EMAIL" class="pure-input-1" id="contact_email" placeholder="Email address">
+                                  <button type="submit" value="Join" name="subscribe" class="pure-button small"><i class="icon-right-1"></i></button>
+                                
+                           </div>
+                       </form>
+                    </div>
+                    <div class="pure-u-1-4 pure-u-med-1-4" >
+                       <h2 class="hide-mobile flat-header">Follow us online</h2>
+                       <div class="social">
+                        <a href="https://www.facebook.com/HoolaSwim" target="_blank"><i class="icon-facebook"></i></a>
+                        <a href="https://twitter.com/hoolaswim" target="_blank"><i class="icon-twitter"></i></a>
+                          <a href="https://www.pinterest.com/hoolaswim" target="_blank"><i class="icon-pinterest"></i></a>
+                        
+                       </div>
+                    </div>
+                     <div class="pure-u-1-4 pure-u-med-1-4" >
+                        <h2 class="flat-header">Free UK Delivery &amp; Free UK Returns</h2>
+                       
+
+                     </div>
+                    <div class="pure-u-1-4 pure-u-med-1-4" >
+                       <h2 class="inline-mobile">Contact us</h2>
+<p  class="inline-mobile"><a href="mailto:shop@hoola.co" class="contact-link">shop@hoola.co</a></p>
+                    </div>
+
+                     
+                </div>
+
+                <a href="#footer-menu" class="mobile-toggle toggle-dropdown" data-href="#footer-menu">CUSTOMER SERVICE</a>
+                <div id="footer-menu" class="pure-menu pure-menu-open pure-menu-horizontal sub-menu">
+                        <ul>
+                            {% for link in linklists.footer.links %}
+                              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                
+                 <div class="legal ">&copy; 2015 HOOLA <span class="hide-mobile">LTD. ALL RIGHTS RESERVED</span> <a href="#top" class="scrollto hide-desktop">Back to top</a></div>   
+            </div>
+
+        </footer>
+        </div>
+        
+      {{ "//cdn.shopify.com/s/javascripts/currencies.js" | script_tag }}
+      
+      {{ 'main.js'  | asset_url | script_tag }}
+      <script type="text/javascript">
+ 
+        {% if settings.currency_format %}
+        Currency.format = '{{ settings.currency_format }}';
+        {% endif %}
+         
+        var shopCurrency = '{{ shop.currency }}';
+         
+        /* Sometimes merchants change their shop currency, let's tell our JavaScript file */
+        Currency.money_with_currency_format[shopCurrency] = {{ shop.money_with_currency_format | strip_html | json }};
+        Currency.money_format[shopCurrency] = {{ shop.money_format | strip_html | json }};
+          
+        /* Default currency */
+        var defaultCurrency = '{{ settings.default_currency }}' || shopCurrency;
+          
+        /* Cookie currency */
+        var cookieCurrency = Currency.cookie.read();
+         
+        /* Fix for customer account pages */
+        jQuery('span.money span.money').each(function() {
+          jQuery(this).parents('span.money').removeClass('money');
+        });
+         
+        /* Saving the current price */
+        jQuery('span.money').each(function() {
+          jQuery(this).attr('data-currency-{{ shop.currency }}', jQuery(this).html());
+        });
+         
+        // If there's no cookie.
+        if (cookieCurrency == null) {
+          if (shopCurrency !== defaultCurrency) {
+            Currency.convertAll(shopCurrency, defaultCurrency);
+          }
+          else {
+            Currency.currentCurrency = defaultCurrency;
+          }
+        }
+        // If the cookie value does not correspond to any value in the currency dropdown.
+        else if (jQuery('[name=currencies]').size() && jQuery('[name=currencies] option[value=' + cookieCurrency + ']').size() === 0) {
+          Currency.currentCurrency = shopCurrency;
+          Currency.cookie.write(shopCurrency);
+        }
+        else if (cookieCurrency === shopCurrency) {
+          Currency.currentCurrency = shopCurrency;
+        }
+        else {
+          Currency.convertAll(shopCurrency, cookieCurrency);
+        }
+         
+        jQuery('[name=currencies]').val(Currency.currentCurrency).change(function() {
+          var newCurrency = jQuery(this).val();
+          Currency.convertAll(Currency.currentCurrency, newCurrency);
+          jQuery('.selected-currency').text(Currency.currentCurrency);
+        });
+         
+        var original_selectCallback = window.selectCallback;
+        var selectCallback = function(variant, selector) {
+          original_selectCallback(variant, selector);
+          Currency.convertAll(shopCurrency, jQuery('[name=currencies]').val());
+          jQuery('.selected-currency').text(Currency.currentCurrency);
+        };
+         
+        jQuery('.selected-currency').text(Currency.currentCurrency);
+         
+      </script>
+
+     {{ 'responsive-images.js' | asset_url | script_tag }}
+  {% include 'modify_lightbox_snippet' %}
+</body>
+</html>

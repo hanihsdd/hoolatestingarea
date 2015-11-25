@@ -1,0 +1,35 @@
+<section class='section'>
+<div class="frame">
+    <div class="mixed-grid pure-g-r home-grid">
+        {% for slide in (1..30) %}
+                    
+            {% assign labelGroup = 'home_' %}
+            {% assign enabled = labelGroup | append: 'enabled_' | append: slide %}
+            {% assign hoverstate = labelGroup | append: 'rollover_' | append: slide %}
+            {% assign title = labelGroup | append: 'title_' | append: slide %}
+            {% assign subtitle = labelGroup | append: 'subtitle_'_ | append: slide %}
+            {% assign link = labelGroup | append: 'link_' | append: slide %}
+            {% assign link_title = labelGroup | append: 'link_title_' | append: slide %}
+            {% assign link_enabled = labelGroup | append: 'link_enabled_' | append: slide %}
+            {% assign layout_template = labelGroup | append: 'template_' | append: slide %}
+            {% assign image = labelGroup | append: 'image_' | append: slide | append: '.jpg' %}
+            {% assign alt = labelGroup | append: 'alt_' | append: slide %}
+            
+
+            {% if settings[enabled] == true %}
+                <div class="item {{ settings[layout_template] }} {% if settings[hoverstate] == true %}{% else %}nohover{% endif %}">
+                        {% if settings[link_enabled] == true %}<a href="{{ settings[link] }}">{% endif %}
+                            <div class="info">
+                                <h2>{{ settings[title] }}</h2>
+                                <h3>{{ settings[subtitle] }}</h3>
+                                <h4>{{ settings[link_title] }}</h4>
+                            </div>
+                            <img src="{{ image | asset_url }}" alt="{{ settings[alt] }}">
+                        {% if settings[link_enabled] == true %}</a>{% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+        
+    </div>   
+</div>  
+</section>

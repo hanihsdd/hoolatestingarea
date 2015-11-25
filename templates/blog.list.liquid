@@ -1,0 +1,30 @@
+<section class="frame page">
+    <div class="pure-g-r">
+        <div class="pure-u-1-4 pur-u-med-1-4 side-bar">
+            <nav>
+       
+              <ul class="scroll-navigion">
+                <li class="page-title">{{ blog.title }}</li>
+                  {% paginate blog.articles by 50 %}
+                {% for article in blog.articles %}
+                      <li><a href="#{{ article.title | handleize }}">{{ article.title }}</a></li>
+                  {% endfor %}
+                {% endpaginate %}
+              </ul>
+          </nav>
+        </div>
+        <section class="pure-u-3-4  pur-u-med-3-4 page-content">
+              {% paginate blog.articles by 50 %}
+                {% for article in blog.articles %}
+                <article id="{{ article.title | handleize }}" >
+                  <h1>{{ article.title }}</h1>
+                  <div class="content">
+                    {{ article.content }}
+                  </div>
+                
+                </article>
+                {% endfor %}
+                {% endpaginate %}
+        </section>
+    </div>
+</section>

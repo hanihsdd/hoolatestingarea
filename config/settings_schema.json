@@ -1,0 +1,4491 @@
+[
+  {
+    "name": "General Theme Settings",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "site_banner_enabled",
+        "label": "Site banner enabled"
+      },
+      {
+        "type": "text",
+        "id": "site_banner_message",
+        "label": "Site banner message"
+      }
+    ]
+  },
+  {
+    "name": "Homepage",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Grid"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_1",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_1",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_1",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_1.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_alt_1",
+        "label": "Alt Text"
+      },
+      {
+        "type": "text",
+        "id": "home_title_1",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_1",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_1",
+        "label": "Link title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_1",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_1",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_2",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_2",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_2",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_2.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_alt_2",
+        "label": "Alt Text"
+      },
+      {
+        "type": "text",
+        "id": "home_title_2",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_2",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_2",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_2",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_2",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_3",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_3",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_3",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_3.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_alt_3",
+        "label": "Alt Text"
+      },
+      {
+        "type": "text",
+        "id": "home_title_3",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_3",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_3",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_3",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_3",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_4",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_4",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_4",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_4.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_alt_4",
+        "label": "Alt Text"
+      },
+      {
+        "type": "text",
+        "id": "home_title_4",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_4",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_4",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_4",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_4",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 5"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_5",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_5",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_5",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_5.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_alt_5",
+        "label": "Alt Text"
+      },
+      {
+        "type": "text",
+        "id": "home_title_5",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_5",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_5",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_5",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_5",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 6"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_6",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_6",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_6",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_6.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_6",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_6",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_6",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_6",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_6",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 7"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_7",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_7",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_7",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_7.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_7",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_7",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_7",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_7",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_7",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 8"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_8",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_8",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_8",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_8.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_8",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_8",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_8",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_8",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_8",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 9"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_9",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_9",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_9",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_9.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_9",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_9",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_9",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_9",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_9",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 10"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_10",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_10",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_10",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_10.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_10",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_10",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_10",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_10",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_10",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 11"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_11",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_11",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_11",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_11.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_11",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_11",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_11",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_11",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_11",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 12"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_12",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_12",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_12",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_12.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_12",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_12",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_12",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_12",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_12",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 13"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_13",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_13",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_13",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_13.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_13",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_13",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_13",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_13",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_13",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 14"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_14",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_14",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_14",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_14.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_14",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_14",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_14",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_14",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_14",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 15"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_15",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_15",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_15",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_15.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_15",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_15",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_15",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_15",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_15",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 16"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_16",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_16",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_16",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_16.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_16",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_16",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_16",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_16",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_16",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 17"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_17",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_17",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_17",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_17.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_17",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_17",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_17",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_17",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_17",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 18"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_18",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_18",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_18",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_18.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_18",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_18",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_18",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_18",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_18",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 19"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_19",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_19",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_19",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_19.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_19",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_19",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_19",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_19",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_19",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 20"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_20",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_20",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_20",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_20.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_20",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_20",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_20",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_20",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_20",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 21"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_21",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_21",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_21",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_21.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_21",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_21",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_21",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_21",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_21",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 22"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_22",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_22",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_22",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_22.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_22",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_22",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_22",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_22",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_22",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 23"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_23",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_23",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_23",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_23.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_23",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_23",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_23",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_23",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_23",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 24"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_24",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_24",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_24",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_24.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_24",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_24",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_24",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_24",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_24",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 25"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_25",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_25",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_25",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_25.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_25",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_25",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_25",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_25",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_25",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 26"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_26",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_26",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_26",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_26.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_26",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_26",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_26",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_26",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_26",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 27"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_27",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_27",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_27",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_27.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_27",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_27",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_27",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_27",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_27",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 28"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_28",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_28",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_28",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_28.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_28",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_28",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_28",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_28",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_28",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 29"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_29",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_29",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_29",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_29.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_29",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_29",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_29",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_29",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_29",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 30"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_enabled_30",
+        "label": "Enabled"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_rollover_30",
+        "label": "Has rollover state"
+      },
+      {
+        "type": "select",
+        "id": "home_template_30",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "home_image_30.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "home_title_30",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "home_subtitle_30",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "home_link_title_30",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "home_link_30",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_link_enabled_30",
+        "label": "Link Enabled"
+      }
+    ]
+  },
+  {
+    "name": "Lookbook",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Grid"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_1",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_1",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_1.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_1.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_1",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_1",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_1",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_1",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_1",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_2",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_2",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_2.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_2.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_2",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_2",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_2",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_2",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_2",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_3",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_3",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_3.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_3.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_3",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_3",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_3",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_3",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_3",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_4",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_4",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_4.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_4.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_4",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_4",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_4",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_4",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_4",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 5"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_5",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_5",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_5.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_5.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_5",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_5",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_5",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_5",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_5",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 6"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_6",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_6",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_6.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_6.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_6",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_6",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_6",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_6",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_6",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 7"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_7",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_7",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_7.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_7.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_7",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_7",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_7",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_7",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_7",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 8"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_8",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_8",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_8.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_8.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_8",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_8",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_8",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_8",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_8",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 9"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_9",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_9",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_9.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_9.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_9",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_9",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_9",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_9",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_9",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 10"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_10",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_10",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_10.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_10.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_10",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_10",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_10",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_10",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_10",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 11"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_11",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_11",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_11.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_11.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_11",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_11",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_11",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_11",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_11",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 12"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_12",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_12",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_12.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_12.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_12",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_12",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_12",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_12",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_12",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 13"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_13",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_13",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_13.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_13.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_13",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_13",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_13",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_13",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_13",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 14"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_14",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_14",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_14.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_14.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_14",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_14",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_14",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_14",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_14",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 15"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_15",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_15",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-4 pure-u-sm-1",
+            "label": "1\/4 Quarter width"
+          },
+          {
+            "value": "pure-u-1-3 pure-u-med-1-3 pure-u-sm-1",
+            "label": "1\/3 Third Width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "1\/2 Half width"
+          },
+          {
+            "value": "pure-u-2-3 pure-u-med-2-3 pure-u-sm-1",
+            "label": "2\/3 Two Third Width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-3-4 pure-u-sm-1",
+            "label": "3\/4 Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_15.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_15.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_15",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_15",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_15",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_15",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_15",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 16"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_16",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_16",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_16.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_16.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_16",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_16",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_16",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_16",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_16",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 17"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_17",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_17",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_17.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_17.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_17",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_17",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_17",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_17",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_17",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 18"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_18",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_18",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_18.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_18.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_18",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_18",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_18",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_18",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_18",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 19"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_19",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_19",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_19.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_19.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_19",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_19",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_19",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_19",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_19",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 20"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_20",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_20",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_20.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_20.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_20",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_20",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_20",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_20",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_20",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 21"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_21",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_21",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_21.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_21.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_21",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_21",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_21",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_21",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_21",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 22"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_22",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_22",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_22.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_22.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_22",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_22",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_22",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_22",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_22",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 23"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_23",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_23",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_23.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_23.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_23",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_23",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_23",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_23",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_23",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 24"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_24",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_24",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_24.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_24.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_24",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_24",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_24",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_24",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_24",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 25"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_25",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_25",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_25.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_25.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_25",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_25",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_25",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_25",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_25",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 26"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_26",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_26",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_26.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_26.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_26",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_26",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_26",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_26",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_26",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 27"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_27",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_27",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_27.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_27.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_27",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_27",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_27",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_27",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_27",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 28"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_28",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_28",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_28.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_28.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_28",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_28",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_28",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_28",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_28",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 29"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_29",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_29",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_29.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_29.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_29",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_29",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_29",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_29",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_29",
+        "label": "Link Enabled"
+      },
+      {
+        "type": "paragraph",
+        "content": "Item 30"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_enabled_30",
+        "label": "Enabled"
+      },
+      {
+        "type": "select",
+        "id": "lookbook_template_30",
+        "label": "Width",
+        "options": [
+          {
+            "value": "pure-u-1-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Quarter width"
+          },
+          {
+            "value": "pure-u-1-2 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Half width"
+          },
+          {
+            "value": "pure-u-3-4 pure-u-med-1-2 pure-u-sm-1",
+            "label": "Three Quarter width"
+          },
+          {
+            "value": "pure-u-1",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_30.jpg",
+        "label": "Thumbnail Image"
+      },
+      {
+        "type": "image",
+        "id": "lookbook_image_large_30.jpg",
+        "label": "Expanded Image"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_title_30",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "lookbook_description_30",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_title_30",
+        "label": "Link Title"
+      },
+      {
+        "type": "text",
+        "id": "lookbook_link_30",
+        "label": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "lookbook_link_enabled_30",
+        "label": "Link Enabled"
+      }
+    ]
+  },
+  {
+    "name": "Money options",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_multiple_currencies",
+        "label": "Show currency selector?",
+        "default": true
+      },
+      {
+        "type": "paragraph",
+        "content": "Although you will be able to display prices on your store front in different currencies, Shopify will still process orders in your shop's currency."
+      },
+      {
+        "type": "select",
+        "id": "currency_format",
+        "label": "Money format",
+        "options": [
+          {
+            "value": "money_format",
+            "label": "Without Currency, ex: $10.00"
+          },
+          {
+            "value": "money_with_currency_format",
+            "label": "With Currency, ex: $10 CAD"
+          }
+        ],
+        "default": "money_with_currency_format"
+      },
+      {
+        "type": "text",
+        "id": "supported_currencies",
+        "label": "Currencies you wish to support",
+        "default": "GBP CAD USD"
+      },
+      {
+        "type": "text",
+        "id": "default_currency",
+        "label": "Default currency",
+        "default": "CAD"
+      },
+      {
+        "type": "paragraph",
+        "content": "Separate your currency codes with a space. Use the ISO 4217 3-letter currency code. Click [here](http:\/\/www.xe.com\/iso4217.php) for a complete list of currency codes. Example: CAD USD."
+      },
+      {
+        "type": "paragraph",
+        "content": "* For this functionality to work in your shop, you are required to edit your money formats as per [these instructions](http:\/\/wiki.shopify.com\/Do_Tell_Where_The_Money_Is) (“Do tell where the money is”)."
+      }
+    ]
+  }
+]

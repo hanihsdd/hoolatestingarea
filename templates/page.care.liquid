@@ -1,0 +1,24 @@
+
+<section class="frame page">
+    <div class="pure-g-r ">
+        <div class="pure-u-1-4 pur-u-med-1-4 side-bar">
+            <nav>
+            <ul class="scroll-navigion">
+              <li class="page-title">{{ page.title }}</li>
+                  {% for link in linklists.care-guide.links %}
+                      <li {% if link.active %}class="pure-menu-selected"{% endif %}><a href="{{ link.url }}">{{ link.title }}</a></li>
+                  {% endfor %}
+              </ul>
+            </nav>
+        </div>
+
+
+
+        <section class="pure-u-3-4  pur-u-med-3-4 rte page-content">
+          <article >
+                 
+                  {{ page.content }}
+          </article>
+        </section>
+    </div>
+</section> 

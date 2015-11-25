@@ -1,0 +1,65 @@
+{% layout settings.customer_layout %}
+
+<div id="template" class="frame">
+  <div class="pure-g-r">
+    
+
+
+    <div class="pure-u-1-2 pur-u-med-1-2 pure-form standard pure-form-stacked">
+          <h1>CREATE AN ACCOUNT</h1>
+          {% if shop.checkout.guest_login %}  
+              {% form 'guest_login' %}
+                <input class="btn pure-button" type="submit" value="GUEST CHECKOUT" />
+       <p>OR</p>
+              {% endform %}
+           {% else %}
+      
+               {% form 'create_customer' %}
+                {{ form.errors | default_errors }}
+      
+                <div class="clearfix large_form">
+                 
+                  <input type="text" placeholder="First Name" value="" name="customer[first_name]" id="first_name" class="large" size="30" />
+                </div>
+      
+                <div class="clearfix large_form">
+                 
+                  <input type="text" placeholder="Last Name" value="" name="customer[last_name]" id="last_name" class="large" size="30" />
+                </div>
+      
+                <div class="clearfix large_form">
+                
+                  <input type="email" placeholder="Email Address" value="" name="customer[email]" id="email" class="large" size="30" />
+                </div>
+      
+                <div class="clearfix large_form">
+                 
+                  <input type="password" placeholder="Password" value="" name="customer[password]" id="password" class="large password" size="30" />
+                </div>
+      
+                <div class="action_bottom">
+                  <input class="pure-button secondary" type="submit" value="CREATE ACCOUNT" />
+                 
+                </div>
+              {% endform %}
+      
+          {% endif %}
+         
+        </div>
+        <div class="pure-u-1-2 pur-u-med-1-2 pure-form standard pure-form-stacked">
+    		 <h1>ACCOUNT BENEFITS</h1>
+          <ul class="clean-list">
+            <li>- Faster checkout</li>
+            <li>- Store multiple addresses</li>
+            <li>- View and track your orders</li>
+          </ul>
+    	</div>
+    
+    
+  </div>
+
+ 
+
+  
+</div>
+

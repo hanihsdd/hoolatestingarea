@@ -1,0 +1,34 @@
+{% paginate blog.articles by 50 %}
+ <section class='section filled fixed-section' id='next'>
+            
+            <div class="frame">
+                <div class="pure-g-r blog">
+                
+                    {% for article in blog.articles %}
+                    <div class="item pure-u-1-4 pure-u-med-1-2 pure-u-lrg-1-3">
+                        <a href="{{ article.url }}">
+                            <div class="excerpt image-excerpt"> {{ article.excerpt }}</div>
+                            <h2>{{ article.title }}</h2>
+                            <p>
+                              <time pubdate datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%B %Y' }}</time>
+                            </p>
+                                
+                        </a>        
+                        
+                    </div>
+                    {% endfor %}
+                </div>   
+            </div>  
+        </section>
+
+{% if paginate.pages > 1 %}
+<div id="pagination">
+  {% comment %}
+  When paginating blog articles, a previous article is actually a newer article, not an older one,
+  because blog articles are shown and paginated in a reversed chronological order.
+  The word 'previous' can be confusing, hence we'll change it.
+  {% endcomment %}
+  {{ paginate | default_pagination | replace: 'Previous', 'Newer articles' | replace: 'Next', 'Older articles' }}
+{% endif %}
+
+{% endpaginate %}
